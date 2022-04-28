@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-0L-DyQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iL0-W5-GZ3">
@@ -54,10 +54,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sSc-cG-Vqc" secondAttribute="bottom" id="5TD-77-Avk"/>
-                                                <constraint firstItem="sSc-cG-Vqc" firstAttribute="leading" secondItem="6oy-Yb-Mo3" secondAttribute="leading" id="Rod-dZ-f89"/>
-                                                <constraint firstItem="sSc-cG-Vqc" firstAttribute="top" secondItem="6oy-Yb-Mo3" secondAttribute="top" id="ZJA-dm-TXd"/>
-                                                <constraint firstAttribute="trailing" secondItem="sSc-cG-Vqc" secondAttribute="trailing" id="azd-zn-0RE"/>
+                                                <constraint firstAttribute="bottom" secondItem="sSc-cG-Vqc" secondAttribute="bottom" id="4Km-AE-h3p"/>
+                                                <constraint firstItem="sSc-cG-Vqc" firstAttribute="leading" secondItem="6oy-Yb-Mo3" secondAttribute="leading" id="Uia-VB-WqB"/>
+                                                <constraint firstAttribute="trailing" secondItem="sSc-cG-Vqc" secondAttribute="trailing" id="WCs-XH-Ttp"/>
+                                                <constraint firstItem="sSc-cG-Vqc" firstAttribute="top" secondItem="6oy-Yb-Mo3" secondAttribute="top" id="gm6-sk-xPJ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
