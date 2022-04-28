@@ -25,13 +25,6 @@ class ImageSearchViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
-        
-//        let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .vertical //.horizontal
-//        layout.minimumLineSpacing = 5
-//        layout.minimumInteritemSpacing = 5
-//        collectionView.setCollectionViewLayout(layout, animated: true)
-        
         bindViewModelState()
     }
 
@@ -134,18 +127,4 @@ extension ImageSearchViewController : UICollectionViewDelegate, UICollectionView
 
 }
 
-
-extension ImageSearchViewController : UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1.0, left: 1.0, bottom: 1.0, right: 1.0)//here your custom value for spacing
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let lay = collectionViewLayout as! UICollectionViewFlowLayout
-        let widthPerItem = collectionView.frame.width / 2 - lay.minimumInteritemSpacing
-        
-        return CGSize(width:widthPerItem, height:100)
-    }
-}
 

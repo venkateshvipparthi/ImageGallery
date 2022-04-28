@@ -25,6 +25,8 @@
 		8415A636281AD1BC002E0631 /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415A635281AD1BC002E0631 /* ImageDetailCollectionViewCell.swift */; };
 		8415A639281AD2DB002E0631 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415A638281AD2DB002E0631 /* ViewState.swift */; };
 		8415A63B281AD304002E0631 /* ImageSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415A63A281AD304002E0631 /* ImageSearchViewModel.swift */; };
+		8415A63F281AD982002E0631 /* APISuccessResponce.json in Resources */ = {isa = PBXBuildFile; fileRef = 8415A63E281AD982002E0631 /* APISuccessResponce.json */; };
+		8415A641281AD9B9002E0631 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415A640281AD9B9002E0631 /* MockNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		8415A635281AD1BC002E0631 /* ImageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		8415A638281AD2DB002E0631 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		8415A63A281AD304002E0631 /* ImageSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewModel.swift; sourceTree = "<group>"; };
+		8415A63E281AD982002E0631 /* APISuccessResponce.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APISuccessResponce.json; sourceTree = "<group>"; };
+		8415A640281AD9B9002E0631 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				8415A606281AB835002E0631 /* ImageGalleryTests.swift */,
+				8415A63E281AD982002E0631 /* APISuccessResponce.json */,
+				8415A640281AD9B9002E0631 /* MockNetworkManager.swift */,
 			);
 			path = ImageGalleryTests;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8415A63F281AD982002E0631 /* APISuccessResponce.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8415A641281AD9B9002E0631 /* MockNetworkManager.swift in Sources */,
 				8415A607281AB835002E0631 /* ImageGalleryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
