@@ -7,19 +7,14 @@
 
 import Foundation
 
-
 struct ImageEntity: Codable {
     let photos: Photos
     let stat: String
 }
-
-
 struct Photos: Codable {
     let page, pages, perpage, total: Int
     let photo: [Photo]
 }
-
-
 struct Photo: Codable {
     let id, owner, secret, server: String
     let farm: Int

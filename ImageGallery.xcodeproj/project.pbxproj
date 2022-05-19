@@ -103,7 +103,6 @@
 		8415A5E3281AB832002E0631 = {
 			isa = PBXGroup;
 			children = (
-				8424E184281C1A42008FBF03 /* Coordinator */,
 				8415A5EE281AB832002E0631 /* ImageGallery */,
 				8415A605281AB835002E0631 /* ImageGalleryTests */,
 				8415A60F281AB835002E0631 /* ImageGalleryUITests */,
@@ -124,6 +123,7 @@
 		8415A5EE281AB832002E0631 /* ImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				8424E184281C1A42008FBF03 /* Coordinator */,
 				8415A637281AD2B4002E0631 /* ViewModel */,
 				8415A634281AD147002E0631 /* View */,
 				8415A62D281ACCE9002E0631 /* Model */,

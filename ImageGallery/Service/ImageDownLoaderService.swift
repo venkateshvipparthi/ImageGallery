@@ -13,8 +13,6 @@ enum PhotoRecordState {
   case new, downloaded, failed
 }
 
-
-
 class PhotoRecord {
   let name: String
   let url: String
@@ -43,9 +41,7 @@ class ImageDownLoaderService: Operation {
         return
       }
       
-      
-        
-    guard let url = URL(string: photoRecord.url) else {return}
+      guard let url = URL(string: photoRecord.url) else {return}
         
       guard let imageData = try? Data(contentsOf:url) else { return }
       
