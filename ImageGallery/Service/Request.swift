@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 protocol Requestable {
     var baseUrl:String {get}
     var path:String {get}

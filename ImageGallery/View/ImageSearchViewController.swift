@@ -15,8 +15,11 @@ class ImageSearchViewController: UIViewController, UISearchBarDelegate {
     let pendingOperations = PendingOperations()
     
     private var bindings = Set<AnyCancellable>()
+    
+    weak var coordinator: MainCoordinator?
         
-    private let viewModel:ImageSearchViewModelType = ImageSearchViewModel(networkManager: NetworkManager())
+    
+    var viewModel:ImageSearchViewModelType = ImageSearchViewModel(networkManager: NetworkManager())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,14 +105,14 @@ extension ImageSearchViewController : UICollectionViewDelegate, UICollectionView
     }
     
     func startDownload(for photoRecord: PhotoRecord, at indexPath: IndexPath) {
-      //1
+      
       guard pendingOperations.downloadsInProgress[indexPath] == nil else {
         return
       }
       
-      //2
+      
       let downloader = ImageDownLoaderService(photoRecord)
-      //3
+      
       downloader.completionBlock = {
         if downloader.isCancelled {
           return
@@ -122,9 +125,9 @@ extension ImageSearchViewController : UICollectionViewDelegate, UICollectionView
 
         }
       }
-      //4
+      
       pendingOperations.downloadsInProgress[indexPath] = downloader
-      //5
+      
       pendingOperations.downloadQueue.addOperation(downloader)
     }
     

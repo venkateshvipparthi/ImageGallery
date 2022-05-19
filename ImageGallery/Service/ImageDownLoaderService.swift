@@ -5,7 +5,6 @@
 //  Created by Admin on 28/04/2022.
 //
 
-import Foundation
 
 import Foundation
 import UIKit
@@ -29,33 +28,33 @@ class PhotoRecord {
 }
 
 class ImageDownLoaderService: Operation {
-    //1
+    
     let photoRecord: PhotoRecord
     
-    //2
+    
     init(_ photoRecord: PhotoRecord) {
       self.photoRecord = photoRecord
     }
     
-    //3
+    
     override func main() {
-      //4
+      
       if isCancelled {
         return
       }
       
-      //5
+      
         
     guard let url = URL(string: photoRecord.url) else {return}
         
       guard let imageData = try? Data(contentsOf:url) else { return }
       
-      //6
+      
       if isCancelled {
         return
       }
       
-      //7
+      
       if !imageData.isEmpty {
         photoRecord.image = UIImage(data:imageData)
         photoRecord.state = .downloaded
